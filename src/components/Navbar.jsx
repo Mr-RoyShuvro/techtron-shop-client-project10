@@ -5,13 +5,13 @@ import logo from '../assets/logo3.png'
 const Navbar = () => {
 
     const navLinks = <>
-        <NavLink to='/'><li><button>Home</button></li></NavLink>
-        <NavLink to='/add'><li><button>Add Product</button></li></NavLink>
-        <NavLink to='/mycart'><li><button>My Cart</button></li></NavLink>
+        <NavLink to='/'><li><button className="font-medium text-[#2A3132]">Home</button></li></NavLink>
+        <NavLink to='/add'><li><button className="font-medium text-[#2A3132]">Add Product</button></li></NavLink>
+        <NavLink to='/mycart'><li><button className="font-medium text-[#2A3132]">My Cart</button></li></NavLink>
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
