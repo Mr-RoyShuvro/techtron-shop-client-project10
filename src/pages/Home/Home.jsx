@@ -1,12 +1,13 @@
 import About from "../About/About";
 import Banner from "./Banner";
+import BrandCart from "./BrandCart";
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
             <About></About>
-            <h3>This is Home</h3>
+            <BrandCart></BrandCart>
         </div>
     );
 };
