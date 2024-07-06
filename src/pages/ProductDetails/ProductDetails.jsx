@@ -8,6 +8,17 @@ const ProductDetails = () => {
 
     const handleAddToCart = () =>{
         console.log(loadedProduct);
+        fetch('http://localhost:5000/cart', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(loadedProduct)
+        })
+        .then(res=> res.json())
+        .then(data=>{
+            console.log(data);
+        })
     }
 
     return (
