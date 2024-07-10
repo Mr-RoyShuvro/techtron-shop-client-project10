@@ -1,10 +1,43 @@
 import { Button, Rating, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, setProducts, products }) => {
 
     const { _id, imageURL, name, brand, type, price, rating } = cart;
+
+    const handleRemoveCart = id => {
+        console.log(id);
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:5000/cart/${id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your cart has been deleted.",
+                                icon: "success"
+                            });
+                            const remaining = products.filter(product => product._id !== id)
+                            setProducts(remaining);
+                        }
+                    })
+            }
+        });
+    }
 
     return (
         <div className=" shadow-xl flex gap-10 pr-10 items-center bg-orange-100 rounded-lg">
@@ -29,7 +62,7 @@ const Cart = ({ cart }) => {
                     <Link to={`/product/${_id}`}>
                         <Button className="w-full" variant="contained" color='warning'>Phone Details</Button>
                     </Link>
-                    <Button variant="outlined" color='warning'>Remove From Cart</Button>
+                    <Button onClick={() => handleRemoveCart(_id)} variant="outlined" color='warning'>Remove From Cart</Button>
                 </Stack>
             </div>
         </div>

@@ -28,7 +28,7 @@ function SamsungSlider() {
                             <figure className="px-10 pt-10">
                                 <img
                                     src={sam1}
-                                    alt="Shoes"
+                                    alt="Samsung"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">
@@ -42,7 +42,7 @@ function SamsungSlider() {
                             <figure className="px-10 pt-10">
                                 <img
                                     src={sam2}
-                                    alt="Shoes"
+                                    alt="Samsung"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">
@@ -56,7 +56,7 @@ function SamsungSlider() {
                             <figure className="px-10 pt-10">
                                 <img
                                     src={sam3}
-                                    alt="Shoes"
+                                    alt="Samsung"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">
@@ -70,7 +70,7 @@ function SamsungSlider() {
                             <figure className="px-10 pt-10">
                                 <img
                                     src={sam4}
-                                    alt="Shoes"
+                                    alt="Samsung"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">
@@ -84,7 +84,7 @@ function SamsungSlider() {
                             <figure className="px-10 pt-10">
                                 <img
                                     src={sam5}
-                                    alt="Shoes"
+                                    alt="Samsung"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">

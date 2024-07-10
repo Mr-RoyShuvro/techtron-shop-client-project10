@@ -7,6 +7,7 @@ import SamsungProduct from "../pages/SamsungProduct/SamsungProduct";
 import AppleProduct from "../pages/AppleProduct/AppleProduct";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import MyCart from "../pages/MyCart/MyCart";
+import UpdateProduct from "../pages/UpdateProduct/UpdateProduct";
 
 const router = createBrowserRouter([
     {
@@ -27,16 +28,22 @@ const router = createBrowserRouter([
             },
             {
                 path: '/samsung',
-                element: <SamsungProduct></SamsungProduct>
+                element: <SamsungProduct></SamsungProduct>,
+                loader: () => fetch('http://localhost:5000/product')
             },
             {
                 path: '/apple',
                 element: <AppleProduct></AppleProduct>
             },
             {
+                path: '/update/:id',
+                element: <UpdateProduct></UpdateProduct>,
+                loader: ({ params }) => fetch(`http://localhost:5000/update/${params.id}`)
+            },
+            {
                 path: '/product/:id',
                 element: <ProductDetails></ProductDetails>,
-                loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
             },
             {
                 path: '/mycart',

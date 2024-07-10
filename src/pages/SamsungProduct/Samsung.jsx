@@ -30,7 +30,9 @@ const Samsung = ({ product }) => {
                     <Link to={`/product/${_id}`}>
                         <Button variant="contained" color='warning'>Details</Button>
                     </Link>
-                    <Button variant="outlined" color='warning'>Update</Button>
+                    <Link to={`/update/${_id}`}>
+                        <Button variant="outlined" color='warning'>Update</Button>
+                    </Link>
                 </Stack>
             </div>
         </div>

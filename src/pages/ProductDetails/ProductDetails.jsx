@@ -1,6 +1,7 @@
 import { Button, Rating, Stack } from "@mui/material";
 import { useLoaderData } from "react-router-dom";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart'; // Ensure this import path is correct and the package is installed
+import Swal from "sweetalert2";
 
 const ProductDetails = () => {
     const loadedProduct = useLoaderData();
@@ -18,6 +19,13 @@ const ProductDetails = () => {
         .then(res=> res.json())
         .then(data=>{
             console.log(data);
+            if(data.insertedId){
+                Swal.fire({
+                    title: "Success!",
+                    text: "Cart has been added to cart successfully.",
+                    icon: "success"
+                  });
+            }
         })
     }
 
