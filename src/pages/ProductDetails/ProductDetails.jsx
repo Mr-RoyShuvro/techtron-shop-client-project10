@@ -7,26 +7,38 @@ const ProductDetails = () => {
     const loadedProduct = useLoaderData();
     const { imageURL, name, brand, type, price, rating, description } = loadedProduct;
 
-    const handleAddToCart = () =>{
+    const handleMyCart = () => {
         console.log(loadedProduct);
-        fetch('http://localhost:5000/cart', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(loadedProduct)
-        })
-        .then(res=> res.json())
-        .then(data=>{
-            console.log(data);
-            if(data.insertedId){
-                Swal.fire({
-                    title: "Success!",
-                    text: "Cart has been added to cart successfully.",
-                    icon: "success"
-                  });
+        Swal.fire({
+            title: "Are you sure to add?",
+            text: "This cart will be saved in my cart!",
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Add this!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch('http://localhost:5000/cart', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(loadedProduct)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.insertedId) {
+                            Swal.fire({
+                                title: "Success!",
+                                text: "Your cart has been added successfully.",
+                                icon: "success"
+                            });
+                        }
+                    })
             }
-        })
+        });
     }
 
     return (
@@ -53,7 +65,7 @@ const ProductDetails = () => {
                     <h3 className='px-5 py-2 text-lg font-bold text-[#2A3132]'>Details of {name}</h3>
                     <h3 className='px-5 pb-10 text-gray-800'>{description}</h3>
                     <Stack className='px-2 pb-2' direction="row" spacing={2}>
-                        <Button onClick={handleAddToCart} className='w-full' variant="contained" color='warning' endIcon={<AddShoppingCartIcon />}>
+                        <Button onClick={handleMyCart} className='w-full' variant="contained" color='warning' endIcon={<AddShoppingCartIcon />}>
                             Add To Cart
                         </Button>
                     </Stack>

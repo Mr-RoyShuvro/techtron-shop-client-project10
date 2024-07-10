@@ -59,7 +59,7 @@ const Cart = ({ cart, setProducts, products }) => {
             </div>
             <div>
                 <Stack className="" direction="column" spacing={2}>
-                    <Link to={`/product/${_id}`}>
+                    <Link to={`/cartproduct/${_id}`}>
                         <Button className="w-full" variant="contained" color='warning'>Phone Details</Button>
                     </Link>
                     <Button onClick={() => handleRemoveCart(_id)} variant="outlined" color='warning'>Remove From Cart</Button>
