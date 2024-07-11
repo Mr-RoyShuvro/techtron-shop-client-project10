@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Samsung = ({ product }) => {
+const Apple = ({ product }) => {
 
     const { _id, imageURL, name, brand, type, price, rating } = product;
 
@@ -39,8 +39,8 @@ const Samsung = ({ product }) => {
     );
 };
 
-export default Samsung;
+export default Apple;
 
-Samsung.propTypes = {
+Apple.propTypes = {
     product: PropTypes.array,
 }

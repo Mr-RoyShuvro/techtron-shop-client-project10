@@ -16,19 +16,6 @@ const SamsungProduct = () => {
             alert('No product is available')
         }
     }, [loadedData]);
-    
-
-
-
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/product')       /* problem */
-    //         .then(res => res.json())
-    //         .then(allProduct => {
-    //             const remainingProduct = allProduct.filter(product => product.brand == 'Samsung' || 'samsung');
-    //             setProduct(remainingProduct);
-    //             // console.log(remainingProduct)
-    //         })
-    // }, [])
 
     return (
         <div>

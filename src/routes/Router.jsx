@@ -34,7 +34,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/apple',
-                element: <AppleProduct></AppleProduct>
+                element: <AppleProduct></AppleProduct>,
+                loader: () => fetch('http://localhost:5000/product')
             },
             {
                 path: '/update/:id',

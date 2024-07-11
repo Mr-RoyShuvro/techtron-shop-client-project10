@@ -1,12 +1,12 @@
 import Slider from "react-slick";
-import sam1 from '../../assets/sam1.png';
-import sam2 from '../../assets/sam2.png';
-import sam3 from '../../assets/sam3.png';
-import sam4 from '../../assets/sam4.png';
-import sam5 from '../../assets/sam5.png';
+import apple1 from '../../assets/apple1.png';
+import apple2 from '../../assets/apple2.png';
+import apple3 from '../../assets/apple3.png';
+import apple4 from '../../assets/apple4.png';
+import apple5 from '../../assets/apple5.png';
 import background from '../../assets/bg2.png'
 
-function SamsungSlider() {
+function AppleSlider() {
     var settings = {
         dots: false,
         arrows: true,
@@ -26,12 +26,40 @@ function SamsungSlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10">
                                 <img
-                                    src={sam1}
-                                    alt="Samsung"
+                                    src={apple1}
+                                    alt="Apple"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">Galaxy S24 Ultra</h2>
+                                <h2 className="card-title text-[#2A3132]">iPhone 14 Plus</h2>
+                                <p className="text-gray-800">Price: $1,299</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className=" bg-white shadow-xl mx-2">
+                            <figure className="px-10 pt-10">
+                                <img
+                                    src={apple2}
+                                    alt="Apple"
+                                    className="" />
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title text-[#2A3132]">Apple Watch Ultra 2</h2>
+                                <p className="text-gray-800">Price: $799</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className=" bg-white shadow-xl mx-2">
+                            <figure className="px-10 pt-10">
+                                <img
+                                    src={apple3}
+                                    alt="Apple"
+                                    className="" />
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title text-[#2A3132]">iPad Air 13-inch</h2>
                                 <p className="text-gray-800">Price: $1,249</p>
                             </div>
                         </div>
@@ -40,13 +68,13 @@ function SamsungSlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10">
                                 <img
-                                    src={sam2}
-                                    alt="Samsung"
+                                    src={apple4}
+                                    alt="Apple"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">Galaxy Book3 Pro 360</h2>
-                                <p className="text-gray-800">Price: $1,199</p>
+                                <h2 className="card-title text-[#2A3132]">iPhone 15 Pro Max</h2>
+                                <p className="text-gray-800">Price: $1,429</p>
                             </div>
                         </div>
                     </div>
@@ -54,41 +82,13 @@ function SamsungSlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10">
                                 <img
-                                    src={sam3}
-                                    alt="Samsung"
+                                    src={apple5}
+                                    alt="Apple"
                                     className="" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">Galaxy Z Fold5</h2>
-                                <p className="text-gray-800">Price: $1,800</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10">
-                                <img
-                                    src={sam4}
-                                    alt="Samsung"
-                                    className="" />
-                            </figure>
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">Galaxy Book4 Edge</h2>
-                                <p className="text-gray-800">Price: $1,350</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10">
-                                <img
-                                    src={sam5}
-                                    alt="Samsung"
-                                    className="" />
-                            </figure>
-                            <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">Galaxy Watch FE</h2>
-                                <p className="text-gray-800">Price: $199</p>
+                                <h2 className="card-title text-[#2A3132]">Apple Watch Series 9</h2>
+                                <p className="text-gray-800">Price: $399</p>
                             </div>
                         </div>
                     </div>
@@ -98,4 +98,4 @@ function SamsungSlider() {
     );
 }
 
-export default SamsungSlider;
+export default AppleSlider;
