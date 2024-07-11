@@ -1,7 +1,7 @@
 import { Button, Rating, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-
+import PropTypes from 'prop-types';
 
 const Cart = ({ cart, setProducts, products }) => {
 
@@ -16,7 +16,7 @@ const Cart = ({ cart, setProducts, products }) => {
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!"
+            confirmButtonText: "Yes, remove it!"
         }).then((result) => {
             if (result.isConfirmed) {
                 fetch(`http://localhost:5000/cart/${id}`, {
@@ -27,8 +27,8 @@ const Cart = ({ cart, setProducts, products }) => {
                         console.log(data);
                         if (data.deletedCount > 0) {
                             Swal.fire({
-                                title: "Deleted!",
-                                text: "Your cart has been deleted.",
+                                title: "Removed!",
+                                text: "Your cart has been removed.",
                                 icon: "success"
                             });
                             const remaining = products.filter(product => product._id !== id)
@@ -70,3 +70,9 @@ const Cart = ({ cart, setProducts, products }) => {
 };
 
 export default Cart;
+
+Cart.propTypes ={
+    cart: PropTypes.array,
+    setProducts: PropTypes.func,
+    products: PropTypes.array,
+}

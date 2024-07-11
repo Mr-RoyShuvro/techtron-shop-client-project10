@@ -1,8 +1,9 @@
-import * as React from 'react';
+// import * as React from 'react';
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Samsung = ({ product }) => {
 
@@ -40,3 +41,7 @@ const Samsung = ({ product }) => {
 };
 
 export default Samsung;
+
+Samsung.propTypes = {
+    product: PropTypes.array,
+}
