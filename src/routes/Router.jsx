@@ -11,8 +11,9 @@ import UpdateProduct from "../pages/UpdateProduct/UpdateProduct";
 import MyCartProductDetails from "../pages/MyCart/MyCartProductDetails";
 import SonyProduct from "../pages/SonyProduct/SonyProduct";
 import HpProduct from "../pages/HpProduct/HpProduct";
-import GoogleProduct from "../pages/MicrosoftProduct/GoogleProduct";
+import GoogleProduct from "../pages/GoogleProduct/GoogleProduct";
 import AsusProduct from "../pages/AsusProduct/AsusProduct";
+import MicrosoftProduct from "../pages/MicrosoftProduct/MicrosoftProduct";
 
 const router = createBrowserRouter([
     {
@@ -59,6 +60,11 @@ const router = createBrowserRouter([
             {
                 path: '/asus',
                 element: <AsusProduct></AsusProduct>,
+                loader: () => fetch('http://localhost:5000/product')
+            },
+            {
+                path: '/microsoft',
+                element: <MicrosoftProduct></MicrosoftProduct>,
                 loader: () => fetch('http://localhost:5000/product')
             },
             {
