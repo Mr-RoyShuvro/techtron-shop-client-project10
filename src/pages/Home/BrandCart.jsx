@@ -45,6 +45,16 @@ const BrandCart = () => {
                     </div>
                 </div>
             </Link>
+            <Link to='/google'>
+                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
+                    <figure>
+                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/yBPKg5c/google.png" alt="Shoes" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title justify-center">Google</h2>
+                    </div>
+                </div>
+            </Link>
             <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
                 <figure>
                     <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/PZDxCfq/lenovo.png" alt="Shoes" />
@@ -59,14 +69,6 @@ const BrandCart = () => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title justify-center">Microsoft</h2>
-                </div>
-            </div>
-            <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                <figure>
-                    <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/yBPKg5c/google.png" alt="Shoes" />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title justify-center">Google</h2>
                 </div>
             </div>
             <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
