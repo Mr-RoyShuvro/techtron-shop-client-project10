@@ -1,12 +1,12 @@
 import Slider from "react-slick";
-import sony1 from '../../assets/sony5.png';
-import sony2 from '../../assets/sony4.png';
-import sony3 from '../../assets/sony3.png';
-import sony4 from '../../assets/sony2.png';
-import sony5 from '../../assets/sony1.png';
+import hp1 from '../../assets/hp6.png';
+import hp2 from '../../assets/hp4.png';
+import hp3 from '../../assets/hp3.png';
+import hp4 from '../../assets/hp2.png';
+import hp5 from '../../assets/hp1.png';
 import background from '../../assets/bg2.png'
 
-function SonySlider() {
+function HpSlider() {
     var settings = {
         dots: false,
         arrows: true,
@@ -26,13 +26,13 @@ function SonySlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10 h-72">
                                 <img
-                                    src={sony1}
-                                    alt="Sony"
+                                    src={hp1}
+                                    alt="HP"
                                     className="max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">Xperia 1 V 256GB</h2>
-                                <p className="text-gray-800">Price: $1,099.99</p>
+                                <h2 className="card-title text-[#2A3132]">HP EliteOne 870 G9</h2>
+                                <p className="text-gray-800">Price: $1,139</p>
                             </div>
                         </div>
                     </div>
@@ -40,13 +40,13 @@ function SonySlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10 h-72">
                                 <img
-                                    src={sony2}
-                                    alt="Sony"
+                                    src={hp2}
+                                    alt="HP"
                                     className="max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">XG300 MEGA BASS Portable</h2>
-                                <p className="text-gray-800">Price: $349.99</p>
+                                <h2 className="card-title text-[#2A3132]">OMEN Gaming Laptop 16t-wf100</h2>
+                                <p className="text-gray-800">Price: $1,449.99</p>
                             </div>
                         </div>
                     </div>
@@ -54,13 +54,13 @@ function SonySlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10 h-72">
                                 <img
-                                    src={sony3}
-                                    alt="Sony"
+                                    src={hp3}
+                                    alt="HP"
                                     className="max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">LinkBuds S x Olivia Rodrigo</h2>
-                                <p className="text-gray-800">Price: $199.99</p>
+                                <h2 className="card-title text-[#2A3132]">HP ZBook Firefly 14 inch</h2>
+                                <p className="text-gray-800">Price: $2,309.00</p>
                             </div>
                         </div>
                     </div>
@@ -68,13 +68,13 @@ function SonySlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10 h-72">
                                 <img
-                                    src={sony4}
-                                    alt="Sony"
+                                    src={hp4}
+                                    alt="HP"
                                     className="max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">ULT POWER SOUND series</h2>
-                                <p className="text-gray-800">Price: $129.99</p>
+                                <h2 className="card-title text-[#2A3132]">HP Spectre x360</h2>
+                                <p className="text-gray-800">Price: $1,599.99</p>
                             </div>
                         </div>
                     </div>
@@ -82,13 +82,13 @@ function SonySlider() {
                         <div className=" bg-white shadow-xl mx-2">
                             <figure className="px-10 pt-10 h-72">
                                 <img
-                                    src={sony5}
-                                    alt="Sony"
+                                    src={hp5}
+                                    alt="HP"
                                     className="max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
-                                <h2 className="card-title text-[#2A3132]">Xperia 5 IV 5G</h2>
-                                <p className="text-gray-800">Price: $699.99</p>
+                                <h2 className="card-title text-[#2A3132]">OMEN TRANSCEND Laptop</h2>
+                                <p className="text-gray-800">Price: $1,849.99</p>
                             </div>
                         </div>
                     </div>
@@ -98,4 +98,4 @@ function SonySlider() {
     );
 }
 
-export default SonySlider;
+export default HpSlider;

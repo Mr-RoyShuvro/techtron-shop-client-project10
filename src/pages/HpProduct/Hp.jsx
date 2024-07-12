@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Sony = ({ product }) => {
+const Hp = ({ product }) => {
 
     const { _id, imageURL, name, brand, type, price, rating } = product;
 
@@ -39,8 +39,8 @@ const Sony = ({ product }) => {
     );
 };
 
-export default Sony;
+export default Hp;
 
-Sony.propTypes = {
+Hp.propTypes = {
     product: PropTypes.array,
 }

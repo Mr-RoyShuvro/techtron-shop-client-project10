@@ -1,32 +1,32 @@
 import { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
-import SonySlider from "./SonySlider";
-import Sony from "./Sony";
+import HpSlider from "./HpSlider";
+import Hp from "./Hp";
 
-const SonyProduct = () => {
+const HpProduct = () => {
     const [products, setProducts] = useState([]);
     const loadedData = useLoaderData();
 
     useEffect(() => {
         if (loadedData) {
-            const remainingProduct = loadedData.filter(product => product.brand.toLowerCase() === 'sony');
+            const remainingProduct = loadedData.filter(product => product.brand.toLowerCase() === 'hp');
             setProducts(remainingProduct);
         }
         else {
-            alert('No product is available')
+            // alert('No product is available')
         }
     }, [loadedData]);
 
     return (
         <div>
-            <SonySlider></SonySlider>
+            <HpSlider></HpSlider>
             <div className="bg-slate-50 py-20">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-5 px-2 max-w-6xl mx-auto">
-                    {products.map(product => <Sony product={product} key={product._id}></Sony>)}
+                    {products.map(product => <Hp product={product} key={product._id}></Hp>)}
                 </div>
             </div>
         </div>
     );
 };
 
-export default SonyProduct;
+export default HpProduct;

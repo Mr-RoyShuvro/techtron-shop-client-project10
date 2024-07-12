@@ -9,6 +9,8 @@ import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import MyCart from "../pages/MyCart/MyCart";
 import UpdateProduct from "../pages/UpdateProduct/UpdateProduct";
 import MyCartProductDetails from "../pages/MyCart/MyCartProductDetails";
+import SonyProduct from "../pages/SonyProduct/SonyProduct";
+import HpProduct from "../pages/HpProduct/HpProduct";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +37,16 @@ const router = createBrowserRouter([
             {
                 path: '/apple',
                 element: <AppleProduct></AppleProduct>,
+                loader: () => fetch('http://localhost:5000/product')
+            },
+            {
+                path: '/sony',
+                element: <SonyProduct></SonyProduct>,
+                loader: () => fetch('http://localhost:5000/product')
+            },
+            {
+                path: '/hp',
+                element: <HpProduct></HpProduct>,
                 loader: () => fetch('http://localhost:5000/product')
             },
             {
