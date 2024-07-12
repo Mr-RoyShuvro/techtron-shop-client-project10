@@ -14,6 +14,7 @@ import HpProduct from "../pages/HpProduct/HpProduct";
 import GoogleProduct from "../pages/GoogleProduct/GoogleProduct";
 import AsusProduct from "../pages/AsusProduct/AsusProduct";
 import MicrosoftProduct from "../pages/MicrosoftProduct/MicrosoftProduct";
+import LenovoProduct from "../pages/LenovoProduct/LenovoProduct";
 
 const router = createBrowserRouter([
     {
@@ -65,6 +66,11 @@ const router = createBrowserRouter([
             {
                 path: '/microsoft',
                 element: <MicrosoftProduct></MicrosoftProduct>,
+                loader: () => fetch('http://localhost:5000/product')
+            },
+            {
+                path: '/lenovo',
+                element: <LenovoProduct></LenovoProduct>,
                 loader: () => fetch('http://localhost:5000/product')
             },
             {
