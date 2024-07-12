@@ -12,6 +12,7 @@ import MyCartProductDetails from "../pages/MyCart/MyCartProductDetails";
 import SonyProduct from "../pages/SonyProduct/SonyProduct";
 import HpProduct from "../pages/HpProduct/HpProduct";
 import GoogleProduct from "../pages/MicrosoftProduct/GoogleProduct";
+import AsusProduct from "../pages/AsusProduct/AsusProduct";
 
 const router = createBrowserRouter([
     {
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
             {
                 path: '/google',
                 element: <GoogleProduct></GoogleProduct>,
+                loader: () => fetch('http://localhost:5000/product')
+            },
+            {
+                path: '/asus',
+                element: <AsusProduct></AsusProduct>,
                 loader: () => fetch('http://localhost:5000/product')
             },
             {
