@@ -15,6 +15,8 @@ import GoogleProduct from "../pages/GoogleProduct/GoogleProduct";
 import AsusProduct from "../pages/AsusProduct/AsusProduct";
 import MicrosoftProduct from "../pages/MicrosoftProduct/MicrosoftProduct";
 import LenovoProduct from "../pages/LenovoProduct/LenovoProduct";
+import LogIn from "../Authentication/LogIn";
+import Register from "../Authentication/Register";
 
 const router = createBrowserRouter([
     {
@@ -93,6 +95,14 @@ const router = createBrowserRouter([
                 path: '/mycart',
                 element: <MyCart></MyCart>,
                 loader: () => fetch('http://localhost:5000/cart')
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            },
+            {
+                path: '/login',
+                element: <LogIn></LogIn>
             }
         ]
     }
