@@ -61,9 +61,11 @@ const ProductDetails = () => {
                         </Stack>
                     </div>
                 </div>
-                <div className="max-w-lg mx-auto bg-yellow-100 ">
-                    <h3 className='px-5 py-2 text-lg font-bold text-[#2A3132]'>Details of {name}</h3>
-                    <h3 className='px-5 pb-10 text-gray-800'>{description}</h3>
+                <div className="max-w-lg mx-auto bg-yellow-100 flex flex-col justify-between">
+                    <div>
+                        <h3 className='px-5 py-2 text-lg font-bold text-[#2A3132]'>Details of {name}</h3>
+                        <h3 className='px-5 pb-10 text-gray-800'>{description}</h3>
+                    </div>
                     <Stack className='px-2 pb-2' direction="row" spacing={2}>
                         <Button onClick={handleMyCart} className='w-full' variant="contained" color='warning' endIcon={<AddShoppingCartIcon />}>
                             Add To Cart

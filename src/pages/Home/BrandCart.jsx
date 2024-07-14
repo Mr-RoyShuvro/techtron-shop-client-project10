@@ -1,90 +1,108 @@
 import { Link } from "react-router-dom";
-
+import { CardActionArea } from '@mui/material';
 
 const BrandCart = () => {
 
     return (
-        <div className="grid grid-cols-4 gap-5 max-w-6xl mx-auto my-20">
-            <Link to='/samsung'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/8x2wChV/samsung.png" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">Samsung</h2>
-                    </div>
-                </div>
-            </Link>
-            <Link to='/apple'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/q9ghB34/apple.png" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">Apple</h2>
-                    </div>
-                </div>
-            </Link>
-            <Link to='/sony'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/gy0QxbC/sony.png" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">Sony</h2>
-                    </div>
-                </div>
-            </Link>
-            <Link to='/hp'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/GF90mhr/hp.png" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">HP</h2>
-                    </div>
-                </div>
-            </Link>
-            <Link to='/google'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/yBPKg5c/google.png" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">Google</h2>
-                    </div>
-                </div>
-            </Link>
-            <Link to='/asus'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/RpHJX3F/asus.png" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">Asus</h2>
-                    </div>
-                </div>
-            </Link>
-            <Link to='/microsoft'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/hFf3r1B/microsoft.pngg" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">Microsoft</h2>
-                    </div>
-                </div>
-            </Link>
-            <Link to='/lenovo'>
-                <div className="card bg-gradient-to-r from-[#ff9a1f] to-[#fcc485] hover:bg-gradient-to-r hover:from-[#ec9939] hover:to-[#e4870e] h-64 shadow-xl ">
-                    <figure>
-                        <img className="h-12 mt-20 mb-5" src="https://i.ibb.co/PZDxCfq/lenovo.png" alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                        <h2 className="card-title justify-center">Lenovo</h2>
-                    </div>
-                </div>
-            </Link>
+        <div className="bg-slate-100 py-10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-6xl mx-auto my-20 px-1">
+                <Link to='/samsung'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl px-5">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/8x2wChV/samsung.png" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">Samsung</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+                <Link to='/apple'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/q9ghB34/apple.png" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">Apple</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+                <Link to='/sony'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl px-5">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/gy0QxbC/sony.png" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">Sony</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+                <Link to='/hp'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/GF90mhr/hp.png" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">HP</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+                <Link to='/google'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl px-10">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/yBPKg5c/google.png" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">Google</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+                <Link to='/asus'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl px-10">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/RpHJX3F/asus.png" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">Asus</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+                <Link to='/microsoft'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl px-10">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/hFf3r1B/microsoft.pngg" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">Microsoft</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+                <Link to='/lenovo'>
+                    <CardActionArea>
+                        <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl px-10">
+                            <figure className="h-40">
+                                <img className="max-h-28 mt-5 mb-5" src="https://i.ibb.co/PZDxCfq/lenovo.png" alt="Shoes" />
+                            </figure>
+                            <div className="pb-5">
+                                <h2 className="card-title justify-center text-[#FB6542] font-bold text-2xl">Lenovo</h2>
+                            </div>
+                        </div>
+                    </CardActionArea>
+                </Link>
+            </div>
         </div>
     );
 };
