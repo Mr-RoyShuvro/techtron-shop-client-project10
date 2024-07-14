@@ -4,8 +4,10 @@ import { CardActionArea } from '@mui/material';
 const BrandCart = () => {
 
     return (
-        <div className="bg-slate-100 py-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-6xl mx-auto my-20 px-1">
+        <div className="bg-slate-100 pt-20 pb-32">
+            <h3 className="text-[#FB6542] text-5xl font-semibold text-center pb-5">Explore Top Brands</h3>
+            <p className="text-center text-[#2A3132] font-normal text-lg">Explore a curated selection of top-tier brands known for quality and innovation in technology and electronics.</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-6xl mx-auto mt-10 px-1">
                 <Link to='/samsung'>
                     <CardActionArea>
                         <div className="card bg-white hover:bg-gradient-to-r hover:from-gray-50 hover:to-white shadow-xl px-5">
