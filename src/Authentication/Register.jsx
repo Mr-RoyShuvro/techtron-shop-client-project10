@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProviders";
 
 
 const Register = () => {
+
+    const { createUser } = useContext(AuthContext);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -14,6 +18,13 @@ const Register = () => {
         const imageURL = form.image.value;
         console.log(firstName, LastName, email, password, address, imageURL);
 
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
 
     return (
@@ -65,11 +76,11 @@ const Register = () => {
                             <input type="text" name="image" placeholder="Image URL" className="input input-bordered bg-white text-black" required />
                         </div>
                         <div className="form-control mt-6">
-                            <button className='btn bg-[#FB6542] text-white border-none hover:bg-[#cf5134] text-base font-medium'>Add Product</button>
+                            <button className='btn bg-[#FB6542] text-white border-none hover:bg-[#cf5134] text-base font-medium'>Register</button>
                         </div>
                         <h3 className="text-black font-medium pt-5 pl-2">Already have an account? Please <Link to='/login' className="text-blue-500 font-bold">Login</Link></h3>
                     </form>
-                    
+
                 </div>
             </div>
         </div>

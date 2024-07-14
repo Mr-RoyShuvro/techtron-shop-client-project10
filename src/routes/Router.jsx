@@ -17,6 +17,7 @@ import MicrosoftProduct from "../pages/MicrosoftProduct/MicrosoftProduct";
 import LenovoProduct from "../pages/LenovoProduct/LenovoProduct";
 import LogIn from "../Authentication/LogIn";
 import Register from "../Authentication/Register";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/add',
-                element: <AddProduct></AddProduct>
+                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
             },
             {
                 path: '/samsung',

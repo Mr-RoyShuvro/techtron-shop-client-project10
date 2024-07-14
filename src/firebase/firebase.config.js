@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBfAaIrfAVe0jTotC_dVSHN-fsDA8z4-PY",
-  authDomain: "techtron-shop.firebaseapp.com",
-  projectId: "techtron-shop",
-  storageBucket: "techtron-shop.appspot.com",
-  messagingSenderId: "757534168476",
-  appId: "1:757534168476:web:2fe107818b307826486459"
+  apiKey:import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN,
+  projectId:import.meta.env.VITE_PROJECTID,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
