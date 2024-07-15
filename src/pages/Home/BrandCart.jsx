@@ -6,7 +6,7 @@ const BrandCart = () => {
     return (
         <div className="bg-slate-100 pt-20 pb-32">
             <h3 className="text-[#FB6542] text-5xl font-semibold text-center pb-5">Explore Top Brands</h3>
-            <p className="text-center text-[#2A3132] font-normal text-lg">Explore a curated selection of top-tier brands known for quality and innovation in technology and electronics.</p>
+            <p className="text-center text-[#2A3132] font-normal text-base">Explore a curated selection of top-tier brands known for quality <br />and innovation in technology and electronics.</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-6xl mx-auto mt-10 px-1">
                 <Link to='/samsung'>
                     <CardActionArea>

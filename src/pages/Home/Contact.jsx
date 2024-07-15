@@ -1,4 +1,6 @@
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
+import ContactInformation from './ContactInformation';
+
 
 const mapContainerStyle = {
     width: '600px',
@@ -12,6 +14,7 @@ const center = {
 const Contact = () => {
     return (
         <div className='bg-white py-20'>
+            <ContactInformation></ContactInformation>
             <div className='flex flex-col md:flex-row max-w-6xl mx-auto'>
                 <div className=" w-1/2">
                     <div className="hero h-[600px]"
