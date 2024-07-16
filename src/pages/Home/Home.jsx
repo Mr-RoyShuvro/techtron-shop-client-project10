@@ -1,4 +1,4 @@
-import About from "../About/About";
+import AboutProduct from "../About/AboutProduct";
 import Banner from "./Banner";
 import BrandCart from "./BrandCart";
 import Contact from "./Contact";
@@ -8,9 +8,9 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <About></About>
             <BrandCart></BrandCart>
             <Sale></Sale>
+            <AboutProduct></AboutProduct>
             <Contact></Contact>
         </div>
     );

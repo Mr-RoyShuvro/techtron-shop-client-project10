@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root";
 import Home from "../pages/Home/Home";
-import About from "../pages/About/About";
+import AboutProduct from "../pages/About/AboutProduct";
 import AddProduct from "../pages/AddProduct/AddProduct";
 import SamsungProduct from "../pages/SamsungProduct/SamsungProduct";
 import AppleProduct from "../pages/AppleProduct/AppleProduct";
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <About></About>
+                element: <AboutProduct></AboutProduct>
             },
             {
                 path: '/add',
