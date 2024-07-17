@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/react-flicking": "^4.11.3",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.16.0",
@@ -35,7 +36,7 @@
     "slick-carousel": "^1.8.1",
     "sort-by": "^1.2.0",
     "sweetalert2": "^11.12.2",
-    "swiper": "^11.1.4",
+    "swiper": "^11.1.5",
     "tailwind-merge": "^2.3.0",
     "typewriter-effect": "^2.21.0"
   },
