@@ -3,7 +3,6 @@ import ContactInformation from './ContactInformation';
 
 
 const mapContainerStyle = {
-    width: '600px',
     height: '600px',
 };
 const center = {
@@ -13,10 +12,10 @@ const center = {
 
 const Contact = () => {
     return (
-        <div className='bg-white py-20'>
+        <div className='bg-white md:py-20'>
             <ContactInformation></ContactInformation>
             <div className='flex flex-col md:flex-row max-w-6xl mx-auto'>
-                <div className=" w-1/2">
+                <div className=" md:w-1/2">
                     <div className="hero h-[600px]"
                         style={{
                             backgroundImage: "url(https://i.ibb.co/ZSQmc2B/oppo-Vc-Vr-NIob-Ark-unsplash.jpg)",
@@ -53,7 +52,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-1/2'>
+                <div className='md:w-1/2'>
                     <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
                         <GoogleMap
                             mapContainerStyle={mapContainerStyle}

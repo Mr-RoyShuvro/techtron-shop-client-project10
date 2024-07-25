@@ -1,6 +1,7 @@
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "../firebase/firebase.config";
+import PropTypes from 'prop-types';
 
 const auth = getAuth(app);
 
@@ -51,3 +52,8 @@ const AuthProvider = ({ children }) => {
 };
 
 export default AuthProvider;
+
+
+AuthProvider.propTypes = {
+    children: PropTypes.array,
+}

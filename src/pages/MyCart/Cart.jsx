@@ -40,9 +40,9 @@ const Cart = ({ cart, setProducts, products }) => {
     }
 
     return (
-        <div className=" shadow-xl flex gap-10 pr-10 items-center bg-orange-100 rounded-lg">
+        <div className=" shadow-xl flex flex-col md:flex-row gap-10 py-2 pl-3 pr-10 items-center bg-orange-100 rounded-lg">
             <figure className="h-72 md:h-60">
-                <img className="max-w-xs" src={imageURL} alt="Loading" />
+                <img className="max-w-xs max-h-64 md:max-h-56" src={imageURL} alt="Loading" />
             </figure>
             <div className="flex-1">
                 <h2 className="card-title text-[#2A3132]">{name}</h2>
@@ -57,7 +57,7 @@ const Cart = ({ cart, setProducts, products }) => {
                     <Rating name="half-rating-read" defaultValue={rating} precision={0.5} readOnly />
                 </Stack>
             </div>
-            <div>
+            <div className="pb-5">
                 <Stack className="" direction="column" spacing={2}>
                     <Link to={`/cartproduct/${_id}`}>
                         <Button className="w-full" variant="contained" color='warning'>Phone Details</Button>

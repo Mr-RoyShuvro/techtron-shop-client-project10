@@ -18,6 +18,7 @@ import LenovoProduct from "../pages/LenovoProduct/LenovoProduct";
 import LogIn from "../Authentication/LogIn";
 import Register from "../Authentication/Register";
 import PrivateRoute from "./PrivateRoute";
+import AllProduct from "../pages/AllProduct/AllProduct";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
             {
                 path: '/add',
                 element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
+            },
+            {
+                path: '/all',
+                element: <AllProduct></AllProduct>,
+                loader: () => fetch('http://localhost:5000/product')
             },
             {
                 path: '/samsung',
@@ -78,12 +84,12 @@ const router = createBrowserRouter([
             },
             {
                 path: '/update/:id',
-                element: <UpdateProduct></UpdateProduct>,
+                element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/update/${params.id}`)
             },
             {
                 path: '/product/:id',
-                element: <ProductDetails></ProductDetails>,
+                element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
             },
             /* for my cart product details */

@@ -2,6 +2,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 const AboutUs = () => {
     const settings = {
         infinite: true,
@@ -78,8 +83,10 @@ const AboutUs = () => {
         <div>
             <div className="min-h-screen bg-orange-950" style={{ backgroundImage: 'url(https://i.ibb.co/ZNZYxZs/solen-feyissa-To-Co-ea-LCo-A-unsplash.jpg)' }}>
                 <div className="hero-overlay bg-opacity-70 min-h-screen pb-28">
-                    <h3 className="text-[#FB6542] text-5xl font-semibold text-center pb-5 pt-10">Your Trusted Tech Source</h3>
-                    <h3 className="text-center text-white font-normal text-base max-w-3xl mx-auto pb-10">At Techtron Shop, we bring you the latest in electronics and technology with exceptional service and unbeatable value. Discover innovation with us.</h3>
+                    <div data-aos="fade-up">
+                        <h3 className="text-[#FB6542] text-5xl font-semibold text-center pb-5 pt-10">Your Trusted Tech Source</h3>
+                        <h3 className="text-center text-white font-normal text-base max-w-3xl mx-auto pb-10">At Techtron Shop, we bring you the latest in electronics and technology with exceptional service and unbeatable value. Discover innovation with us.</h3>
+                    </div>
                     <div className="about-slider-container">
                         <Slider {...settings}>
                             {slidesData.map((slide) => (

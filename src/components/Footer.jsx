@@ -1,29 +1,51 @@
+import { FaPhone } from 'react-icons/fa6';
 import logo from '../assets/logo3.png'
+import { IoMdMail } from 'react-icons/io';
+import { FaLocationArrow } from "react-icons/fa";
 
 const Footer = () => {
     return (
         <div>
-            <footer className="footer bg-base-200 text-base-content p-10">
-                <nav>
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+            <footer className="footer md:flex md:gap-20 bg-base-200 text-base-content p-10">
+                <nav className='space-y-3'>
+                    <h6 className=" text-fuchsia-600 font-extrabold text-3xl"><span className='text-[#ffbb00]'>TECH</span>TRON</h6>
+                    <p className='max-w-xs'>At Techtron Shop, we bring you the latest in electronics and technology with exceptional
+                        service and unbeatable value. Discover innovation with us.</p>
+                    <div className='flex gap-1'>
+                        <FaLocationArrow className="text-3xl text-center h-5 text-fuchsia-700"></FaLocationArrow>
+                        <p >58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+                    </div>
+                    <div className='flex gap-1'>
+                        <FaPhone className="text-3xl text-center h-5 text-fuchsia-700"></FaPhone>
+                        <a className="link link-hover">+(248) 762-0356</a>
+                    </div>
+                    <div className='flex gap-1'>
+                        <IoMdMail className="text-3xl text-center h-5 text-fuchsia-700"></IoMdMail>
+                        <a className="link link-hover">support@techtron.com</a>
+                    </div>
                 </nav>
-                <nav>
-                    <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </nav>
-                <nav>
-                    <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </nav>
+                <div className='footer flex justify-between flex-1 max-w-xl mx-auto pt-12'>
+                    <nav className='space-y-3'>
+                        <h6 className="footer-title text-fuchsia-600 font-bold text-lg">Services</h6>
+                        <a className="link link-hover">Branding</a>
+                        <a className="link link-hover">Design</a>
+                        <a className="link link-hover">Marketing</a>
+                        <a className="link link-hover">Advertisement</a>
+                    </nav>
+                    <nav className='space-y-3'>
+                        <h6 className="footer-title text-fuchsia-600 font-bold text-lg">Company</h6>
+                        <a className="link link-hover">About us</a>
+                        <a className="link link-hover">Contact</a>
+                        <a className="link link-hover">Jobs</a>
+                        <a className="link link-hover">Press kit</a>
+                    </nav>
+                    <nav className='space-y-3'>
+                        <h6 className="footer-title text-fuchsia-600 font-bold text-lg">Legal</h6>
+                        <a className="link link-hover">Terms of use</a>
+                        <a className="link link-hover">Privacy policy</a>
+                        <a className="link link-hover">Cookie policy</a>
+                    </nav>
+                </div>
             </footer>
             <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-10 py-4">
                 <aside className="grid-flow-col items-center">
@@ -31,7 +53,7 @@ const Footer = () => {
                     <p>
                         ACME Industries Ltd.
                         <br />
-                        Providing reliable tech since 1992
+                        Providing reliable tech services since 1992
                     </p>
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">

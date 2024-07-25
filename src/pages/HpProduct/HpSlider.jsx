@@ -9,7 +9,7 @@ import background from '../../assets/bg2.png'
 function HpSlider() {
     var settings = {
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -23,12 +23,12 @@ function HpSlider() {
             <div className="slider-container max-w-6xl mx-auto ">
                 <Slider {...settings}>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={hp1}
                                     alt="HP"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">HP EliteOne 870 G9</h2>
@@ -37,12 +37,12 @@ function HpSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={hp2}
                                     alt="HP"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">OMEN Gaming Laptop 16t-wf100</h2>
@@ -51,12 +51,12 @@ function HpSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={hp3}
                                     alt="HP"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">HP ZBook Firefly 14 inch</h2>
@@ -65,12 +65,12 @@ function HpSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={hp4}
                                     alt="HP"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">HP Spectre x360</h2>
@@ -79,12 +79,12 @@ function HpSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={hp5}
                                     alt="HP"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">OMEN TRANSCEND Laptop</h2>

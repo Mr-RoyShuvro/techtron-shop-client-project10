@@ -11,15 +11,22 @@ import 'swiper/css/pagination';
 
 import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 export default function AboutClients() {
     return (
         <>
             <div className='bg-gray-100 pb-20 pt-5'>
-                <div>
-                    <h3 className="text-[#FB6542] text-5xl font-semibold text-center pb-5 pt-10">Client Testimonials</h3>
-                    <h3 className="text-center text-gray-700 font-normal text-base max-w-3xl mx-auto pb-10">
-                        See what our clients have to say about their experiences with us. Their trust and satisfaction drive our commitment to excellence.
-                    </h3>
+                <div data-aos="fade-up">
+                    <div>
+                        <h3 className="text-[#FB6542] text-5xl font-semibold text-center pb-5 pt-10">Client Testimonials</h3>
+                        <h3 className="text-center text-gray-700 font-normal text-base max-w-3xl mx-auto pb-10">
+                            See what our clients have to say about their experiences with us. Their trust and satisfaction drive our commitment to excellence.
+                        </h3>
+                    </div>
                 </div>
                 <Swiper
                     effect={'coverflow'}
@@ -60,7 +67,7 @@ export default function AboutClients() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide >
-                    <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
+                        <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
                             <img src="https://i.ibb.co/LZcZDkk/Screenshot-1705.png" alt='About Client' className="rounded-full w-32 h-36 mx-auto" />
                             <div className="pt-3">
                                 <h2 className="text-xl font-bold text-black text-center">Sarah Johnson</h2>
@@ -70,10 +77,10 @@ export default function AboutClients() {
                                 </Stack>
                                 <p className="pt-3 pb-20 px-2 text-base text-slate-500 text-center">I recently bought a laptop from this store, and I am thrilled with my purchase. The website is user-friendly, and I found all the information. The customer service team was very helpful in guiding me through the features.</p>
                             </div>
-                        </div> 
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide >
-                    <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
+                        <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
                             <img src="https://i.ibb.co/PDh6DHC/Screenshot-1707.png" alt='About Client' className="rounded-full w-32 h-36 mx-auto" />
                             <div className="pt-3">
                                 <h2 className="text-xl font-bold text-black text-center">Michael Brown</h2>
@@ -86,7 +93,7 @@ export default function AboutClients() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide >
-                    <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
+                        <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
                             <img src="https://i.ibb.co/RPprC1n/Screenshot-1704.png" alt='About Client' className="rounded-full w-32 h-36 mx-auto" />
                             <div className="pt-3">
                                 <h2 className="text-xl font-bold text-black text-center">Emily Davis</h2>
@@ -95,11 +102,11 @@ export default function AboutClients() {
                                     <Rating name="half-rating-read" defaultValue={3.5} precision={0.5} readOnly />
                                 </Stack>
                                 <p className="pt-3 pb-20 px-2 text-base text-slate-500 text-center">I have had nothing but positive experiences with this electronics shop. Their range of products is impressive, and the quality is always top-notch. I recently bought a smart TV, and I am extremely happy with it.</p>
-                            </div> 
+                            </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide >
-                    <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
+                        <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
                             <img src="https://i.ibb.co/Jtb1VKq/Screenshot-1708.png" alt='About Client' className="rounded-full w-32 h-36 mx-auto" />
                             <div className="pt-3">
                                 <h2 className="text-xl font-bold text-black text-center">David Martinez</h2>
@@ -112,7 +119,7 @@ export default function AboutClients() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide >
-                    <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
+                        <div className=" bg-white shadow-xl p-4 rounded-none mx-auto">
                             <img src="https://i.ibb.co/SdF9rY0/Screenshot-1702.png" alt='About Client' className="rounded-full w-32 h-36 mx-auto" />
                             <div className="pt-3">
                                 <h2 className="text-xl font-bold text-black text-center">Jessica Lee</h2>

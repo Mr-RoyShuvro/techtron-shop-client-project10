@@ -1,11 +1,14 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProviders";
 
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
+
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -21,6 +24,9 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+
+                 // navigate after login
+                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.error(error);
@@ -35,7 +41,7 @@ const Register = () => {
                 </div>
                 <div className="card bg-[#f9fdc4] w-full max-w-lg shrink-0 shadow-xl">
                     <form onSubmit={handleRegister} className="card-body">
-                        <div className="flex gap-5">
+                        <div className="flex flex-col md:flex-row gap-5">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#2A3132] font-semibold">First Name</span>
@@ -49,7 +55,7 @@ const Register = () => {
                                 <input type="text" name="last" placeholder="Last Name" className="input input-bordered bg-white text-black" required />
                             </div>
                         </div>
-                        <div className="flex gap-5">
+                        <div className="flex flex-col md:flex-row gap-5">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text  text-[#2A3132] font-semibold">Email</span>

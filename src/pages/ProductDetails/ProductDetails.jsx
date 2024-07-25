@@ -43,7 +43,7 @@ const ProductDetails = () => {
 
     return (
         <div className='bg-slate-50'>
-            <div className="py-10 flex flex-col md:flex-row gap-10 max-w-6xl mx-auto ">
+            <div className="md:py-10 flex flex-col md:flex-row gap-10 max-w-6xl mx-auto ">
                 <div className="card bg-white shadow-xl max-w-xl mx-auto px-10">
                     <figure>
                         <img src={imageURL} alt={name} /> {/* Ensure 'alt' attribute has meaningful content */}

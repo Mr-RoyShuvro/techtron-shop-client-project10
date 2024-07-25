@@ -9,7 +9,7 @@ import background from '../../assets/bg2.png'
 function SamsungSlider() {
     var settings = {
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -17,18 +17,18 @@ function SamsungSlider() {
         autoplaySpeed: 3000,
         pauseOnHover: true
     };
-    
+
     return (
         <div className="py-24" style={{ backgroundImage: `url(${background})` }}>
             <div className="slider-container max-w-6xl mx-auto ">
                 <Slider {...settings}>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={sam1}
                                     alt="Samsung"
-                                    className="" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Galaxy S24 Ultra</h2>
@@ -37,12 +37,12 @@ function SamsungSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={sam2}
                                     alt="Samsung"
-                                    className="" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Galaxy Book3 Pro 360</h2>
@@ -51,12 +51,12 @@ function SamsungSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={sam3}
                                     alt="Samsung"
-                                    className="" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Galaxy Z Fold5</h2>
@@ -65,12 +65,12 @@ function SamsungSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={sam4}
                                     alt="Samsung"
-                                    className="" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Galaxy Book4 Edge</h2>
@@ -79,12 +79,12 @@ function SamsungSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={sam5}
                                     alt="Samsung"
-                                    className="" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Galaxy Watch FE</h2>

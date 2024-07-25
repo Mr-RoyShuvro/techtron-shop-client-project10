@@ -62,7 +62,7 @@ const UpdateProduct = () => {
                             </label>
                             <input defaultValue={name} type="text" name="name" placeholder="Product Name" className="input input-bordered bg-white" required />
                         </div>
-                        <div className="flex gap-5">
+                        <div className="flex flex-col md:flex-row gap-5">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-[#2A3132] font-semibold">Brand Name</span>
@@ -76,7 +76,7 @@ const UpdateProduct = () => {
                                 <input defaultValue={type} type="text" name="type" placeholder="Product Type" className="input input-bordered bg-white" required />
                             </div>
                         </div>
-                        <div className="flex gap-5">
+                        <div className="flex flex-col md:flex-row gap-5">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text  text-[#2A3132] font-semibold">Price</span>

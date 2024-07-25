@@ -9,7 +9,7 @@ import background from '../../assets/bg2.png'
 function MicrosoftSlider() {
     var settings = {
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -23,12 +23,12 @@ function MicrosoftSlider() {
             <div className="slider-container max-w-6xl mx-auto ">
                 <Slider {...settings}>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={microsoft1}
                                     alt="Microsoft"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Surface Laptop 5</h2>
@@ -37,12 +37,12 @@ function MicrosoftSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={microsoft2}
                                     alt="Microsoft"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">New Surface Laptop 13.8”</h2>
@@ -51,12 +51,12 @@ function MicrosoftSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={microsoft3}
                                     alt="Microsoft"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Surface Duo 2</h2>
@@ -65,12 +65,12 @@ function MicrosoftSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={microsoft4}
                                     alt="Microsoft"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Surface Pro</h2>
@@ -79,12 +79,12 @@ function MicrosoftSlider() {
                         </div>
                     </div>
                     <div>
-                        <div className=" bg-white shadow-xl mx-2">
-                            <figure className="px-10 pt-10 h-72">
+                        <div className=" bg-white shadow-xl mx-2 h-96">
+                            <figure className="md:px-10 pt-10 h-32 md:h-72">
                                 <img
                                     src={microsoft5}
                                     alt="Microsoft"
-                                    className="max-h-60" />
+                                    className="max-h-28 md:max-h-60" />
                             </figure>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title text-[#2A3132]">Surface Laptop Studio 2</h2>
