@@ -1,8 +1,11 @@
-# React + Vite
+Here are 5 features of my TECHTRON shop:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Implement secure user authentication with Firebase OAuth for signing in and signing up.
 
-Currently, two official plugins are available:
+2. Display a comprehensive catalog of products with categories and filters functionality. High-quality images, detailed descriptions, specifications, and pricing information for each product.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Users can add products to their cart and remove items.
+
+4. You can add new product and update the product information.
+
+5. Enable customers to see reviews and ratings of previous customers.
